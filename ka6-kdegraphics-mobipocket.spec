@@ -53,7 +53,7 @@ Pliki nagłówkowe dla programistów używających %{kaname}.
 	-B build \
 	-G Ninja \
 	%{!?with_tests:-DBUILD_TESTING=OFF} \
-	-DHTML_INSTALL_DIR=%{_kdedocdir} \
+	-DKDE_INSTALL_DOCBUNDLEDIR=%{_kdedocdir} \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
 	-DQT_MAJOR_VERSION=6
 %ninja_build -C build
