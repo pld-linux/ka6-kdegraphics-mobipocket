@@ -13,6 +13,7 @@ Source0:	https://download.kde.org/stable/release-service/%{version}/src/%{kaname
 URL:		https://kde.org/
 BuildRequires:	Qt6Core-devel >= %{qt_ver}
 BuildRequires:	Qt6Gui-devel >= %{qt_ver}
+BuildRequires:	Qt6Qt5Compat-devel >= %{qt_ver}
 BuildRequires:	cmake >= 3.20
 BuildRequires:	gettext-tools
 BuildRequires:	kf6-extra-cmake-modules >= %{kf_ver}
@@ -23,6 +24,7 @@ BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	Qt6Core >= %{qt_ver}
 Requires:	Qt6Gui >= %{qt_ver}
+Requires:	Qt6Qt5Compat >= %{qt_ver}
 # don't obsolete until ka5 exists on ftp
 #Obsoletes:	ka5-kdegraphics-mobipocket < 24
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
