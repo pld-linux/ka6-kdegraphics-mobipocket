@@ -4,12 +4,12 @@
 Summary:	KDE graphics mobipocket library
 Summary(pl.UTF-8):	Biblioteka KDE graphics mobipocket
 Name:		ka6-%{kaname}
-Version:	25.04.3
+Version:	25.08.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{version}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	62d8c89710c774110d3f9f386b81b0fc
+# Source0-md5:	21ad5924c19671715bd9a6b4a13d9481
 URL:		https://kde.org/
 BuildRequires:	Qt6Core-devel >= %{qt_ver}
 BuildRequires:	Qt6Gui-devel >= %{qt_ver}
@@ -77,7 +77,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libQMobipocket6.so.*.*
-%ghost %{_libdir}/libQMobipocket6.so.2
+%ghost %{_libdir}/libQMobipocket6.so.3
+%{_datadir}/qlogging-categories6/qmobipocket.categories
 
 %files devel
 %defattr(644,root,root,755)
